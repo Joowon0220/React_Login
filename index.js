@@ -4,6 +4,8 @@ const port = 5000
 const bodyParser = require('body-parser');
 const {User} = require("./models/User");
 
+const config = require('./config/key');
+
 //application/x-www-form-urlencoded 형식을 분석해서 가져옴
 app.use(bodyParser.urlencoded({extended: true}));
 //bodyParser? client에서 가져오는 정보 서버에서 분석해서 가져올 수 있게 해주는 애
@@ -13,13 +15,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://Joowon:jw@100425!@cluster0.scexn.mongodb.net/LOGIN?retryWrites=true&w=majority',{
+mongoose.connect(config.mongoURI,{
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex:true, useFindAndModify: false
 }).then(() => console.log('mongoDB Connected...'))
   .catch(err => console.log(err))
 
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/', (req, res) => res.send('Hello World! 노드몬테스트'))
 
 
 //회원가입을 위한 라우트
