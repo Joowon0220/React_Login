@@ -10,4 +10,4 @@ MongoDB,Mongoose,Node토근로그인
    >> 개발환경과 배포환경으로 설정을 나누고 Config 파일안에 넣어둠.
    >> 개발환경시, dev.js 파일안에 키값을 넣어두고 gitignore 파일을 활용하여, git업로드시에도 public에 노출되지 않도록 함.
 7. bcrypt를 이용하여 비밀번호 암호화하기
-8. jsonwebtoken을 이용하여 로그인 토근생성하기
+8. jsonwebtoken을 이용하여 로그인 토근생성, 인증, 로그아웃하기
