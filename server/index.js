@@ -1,6 +1,5 @@
 const express = require('express')
 const app = express()
-const port = 5000
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const config = require('./config/key');
@@ -28,6 +27,10 @@ mongoose.connect(config.mongoURI,{
 
 app.get('/', (req, res) => res.send('Hello World! 노드몬테스트'))
 
+
+app.get('/api/hello', (req, res) =>{
+    res.send("안녕하세요!! 응답완료")
+})
 
 //회원가입을 위한 라우트
 app.post('/api/users/register', (req,res)=>{
@@ -112,6 +115,9 @@ app.get('/api/users/logout', auth, (req, res) => {
             })
         })
 })
+
+
+const port = 5000
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)

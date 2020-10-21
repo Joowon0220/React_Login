@@ -14,3 +14,16 @@ MongoDB,Mongoose,Node토근로그인
 9. client단 만들기 시작
 10. npx create react app . 
 11. React router dom을 이용하여 라우팅하기 (https://reactrouter.com/web/example/basic)
+12. Client부분 React JS 부분 에서  Request를 보내면 되는데 AXIOS를 사용해서 보냄. 
+   >> npm install axios --save
+   >> jQeury를 사용할때 AJAX라고 보면됨. 
+13. 서버와 클라이언트가 포트가 달라서 CORS (Cross-Origin Resource Sharing) 정책에 위반됨.
+14. Proxy Server를 이용하여 문제해결.
+   >> Proxy Server 사용이유:
+   >>>> 1. 회사나 가정에서 인터넷 사용을 제어
+   >>>> 2. 캐쉬를 이용하여 더 빠른 인터넷을 제공
+   >>>> 3. 더 나은 보안 제공
+   >>>> 4. 이용 제한된 사이트 접근 가능
+15. Concurrently를 이용하여 백/프론트 한번에 실행시키기
+16. Ant Design을 이용하여 CSS 완성하기 (http://ant.design) 
+   >> npm install antd --save
