@@ -27,3 +27,8 @@ MongoDB,Mongoose,Node토근로그인
 15. Concurrently를 이용하여 백/프론트 한번에 실행시키기
 16. Ant Design을 이용하여 CSS 완성하기 (http://ant.design) 
    >> npm install antd --save
+17. react-redux, redux, redux-promise, redux-thunk 다운로드
+18. combine reducer를 활용하여 리듀서 관리
+19. react ==> react hooks
+   >> this.state={name: ""}  ==> const[Name, setName] = useState("")
+   >> componentDidMount() ==> useEffect()
