@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Axios from 'axios'
-import {useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
+//dispatcher 는 action creator가 action객체를 리턴하면 파라미터로 받아서
+//store의 reducer에게 넘겨준다.
 import {loginUser} from '../../../_actions/user_action';
 import { withRouter } from 'react-router-dom';
 

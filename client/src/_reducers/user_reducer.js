@@ -1,4 +1,6 @@
-import {LOGIN_USER, REGISTER_USER, AUTH_USER} from '../_actions/types';
+//reducer는 action 타입에 맞춰서 action을 실행
+
+import { LOGIN_USER, REGISTER_USER, AUTH_USER } from '../_actions/types';
 import { registerUser } from '../_actions/user_action';
 
 export default function (state={}, action){

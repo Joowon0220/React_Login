@@ -1,3 +1,7 @@
+//store는 변화될 action 값들을 받아둠
+//dispatcher가 store의 reducer에게 파라미터로 action 전달
+//reducer는 action type에 맞춰서 action
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -8,7 +12,7 @@ import 'antd/dist/antd.css';
 import { applyMiddleware, createStore } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import ReduxThunk from 'redux-thunk';
-import Reducer from './_reducers';
+import Reducer from './_reducers'; 
 
 //그냥 store는 객체밖에 못받아서 promise 와 thunk로 promise와 functions을 받아온다
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, ReduxThunk)(createStore)
