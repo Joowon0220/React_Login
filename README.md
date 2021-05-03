@@ -30,8 +30,8 @@ MongoDB,Mongoose,Node토근로그인
 16. Ant Design을 이용하여 CSS 완성하기 (http://ant.design)
     > > npm install antd --save
 17. react-redux, redux, redux-promise, redux-thunk 다운로드 
-    > > redux-thunk는 리덕스에서 비동기 작업을 처리 할 때 가장 많이 사용하는 미들웨어
-    > > 이 미들웨어를 사용하면 액션 객체가 아닌 함수를 디스패치 할 수 있음.
+    > > redux-thunk는 리덕스에서 비동기 작업을 처리 할 때 가장 많이 사용하는 미들웨어.
+    > > > > 이 미들웨어를 사용하면 액션 객체가 아닌 함수를 디스패치 할 수 있음.
 18. combine reducer를 활용하여 리듀서 관리
 19. react ==> react hooks
 
